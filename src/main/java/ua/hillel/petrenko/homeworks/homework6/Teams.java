@@ -109,20 +109,26 @@ public class Teams {
 
         // Рахуємо середнє арифметичне кожної команди
         double firstTeamAverageScore = (double) (firstPlayerScore1 + firstPlayerScore2 + firstPlayerScore3 + firstPlayerScore4 + firstPlayerScore5) / 5;
+        System.out.println("\nСереднє арифметичне першої команди: " + firstTeamAverageScore + ".");
+
         double secondTeamAverageScore = (double) (secondPlayerScore1 + secondPlayerScore2 + secondPlayerScore3 + secondPlayerScore4 + secondPlayerScore5) / 5;
+        System.out.println("Середнє арифметичне другої команди: " + secondTeamAverageScore + ".");
 
         // Порівнюємо результати і шукаємо переможця
         String winner;
-        double result;
+        int result;
+        int firstTeamScore = firstPlayerScore1 + firstPlayerScore2 + firstPlayerScore3 + firstPlayerScore4 + firstPlayerScore5;
+        int secondTeamScore = secondPlayerScore1 + secondPlayerScore2 + secondPlayerScore3 + secondPlayerScore4 + secondPlayerScore5;
+
         if (firstTeamAverageScore > secondTeamAverageScore) {
-            result = firstTeamAverageScore;
+            result = firstTeamScore;
             System.out.println("\nПеремогла команда " + firstTeamName + ", що набрала " + result + " фрагів.");
         } else if (firstTeamAverageScore < secondTeamAverageScore) {
-            result = secondTeamAverageScore;
+            result = secondTeamScore;
             System.out.println("\nПеремогла команда " + secondTeamName + ", що набрала " + result + " фрагів.");
         } else {
             winner = "нічия";
-            result = secondTeamAverageScore; // нема різниці чий брати результат
+            result = firstTeamScore; // нема різниці чий брати результат
             System.out.println("\nПеремогла " + winner + ", обидві команди набрали " + result + " фрагів. Молодці.");
         }
 
