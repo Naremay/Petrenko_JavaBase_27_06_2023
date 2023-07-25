@@ -15,7 +15,7 @@ public class Rugby {
         System.out.print("Вік першої команди: ");
         for (int i = 0; i < team1.length; i++) {
             if (i == team1.length - 1) {
-                System.out.print(team1[i] + "\n");
+                System.out.println(team1[i]);
             } else {
                 System.out.print(team1[i] + ", ");
             }
@@ -42,7 +42,7 @@ public class Rugby {
         System.out.print("\nВік другої команди: ");
         for (int i = 0; i < team2.length; i++) {
             if (i == team2.length - 1) {
-                System.out.print(team2[i]);
+                System.out.println(team2[i]);
             } else {
                 System.out.print(team2[i] + ", ");
             }
@@ -54,6 +54,6 @@ public class Rugby {
             sumTeam2 += team2[i];
         }
         int averageTeam2 = sumTeam2 / 25;
-        System.out.println("\nСередній рік гравців другої команди: " + averageTeam2);
+        System.out.println("Середній рік гравців другої команди: " + averageTeam2);
     }
 }
