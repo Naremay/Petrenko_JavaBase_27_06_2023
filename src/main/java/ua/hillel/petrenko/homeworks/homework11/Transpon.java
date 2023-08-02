@@ -17,8 +17,15 @@ public class Transpon {
             if (scanner.hasNextInt()) {
                 M = scanner.nextInt();
                 ind = true;
+
+                if (M < 0) {
+                    System.out.println("Введіть додатнє число!\n");
+                    ind = false;
+                    scanner.nextLine();
+                }
+
             } else {
-                System.out.println("Помилка! У наступний раз введіть число.\n");
+                System.out.println("Помилка! У наступний раз введіть ціле число.\n");
                 scanner.nextLine();
             }
         } while (!ind);
@@ -31,8 +38,14 @@ public class Transpon {
             if (scanner.hasNextInt()) {
                 N = scanner.nextInt();
                 ind = true;
+
+                if (N < 0) {
+                    System.out.println("Введіть додатнє число!\n");
+                    ind = false;
+                    scanner.nextLine();
+                }
             } else {
-                System.out.println("Помилка! У наступний раз введіть число.\n");
+                System.out.println("Помилка! У наступний раз введіть ціле число.\n");
                 scanner.nextLine();
             }
         } while (!ind);
