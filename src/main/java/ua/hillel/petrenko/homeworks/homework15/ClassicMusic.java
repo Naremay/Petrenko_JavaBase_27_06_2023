@@ -1,6 +1,7 @@
 package ua.hillel.petrenko.homeworks.homework15;
 
 public class ClassicMusic extends MusicStyles {
+
     public ClassicMusic(String nameBand) {
         super(nameBand);
     }
