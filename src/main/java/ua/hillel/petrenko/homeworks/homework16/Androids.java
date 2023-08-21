@@ -17,7 +17,7 @@ public class Androids implements Smartphones, LinuxOS {
     }
 
     @Override
-    public void linux() {
+    public void linuxVersion() {
         System.out.println("New version LinuxOS for Android");
     }
 }

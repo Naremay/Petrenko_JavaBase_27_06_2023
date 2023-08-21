@@ -7,7 +7,7 @@ public class Main {
         androids.call();
         androids.sms();
         androids.internet();
-        androids.linux();
+        androids.linuxVersion();
 
         System.out.println("--------------------------------");
 
@@ -15,6 +15,6 @@ public class Main {
         iPhones.call();
         iPhones.sms();
         iPhones.internet();
-        iPhones.ios();
+        iPhones.iosVersion();
     }
 }
