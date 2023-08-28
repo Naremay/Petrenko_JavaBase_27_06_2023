@@ -1,6 +1,4 @@
-package ua.hillel.petrenko.lessons.lesson15.exam;
-
-import ua.hillel.petrenko.lessons.lesson15.exam.CarType;
+package ua.hillel.petrenko.lessons.lesson15;
 
 import java.util.Arrays;
 import java.util.Scanner;

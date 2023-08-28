@@ -1,4 +1,4 @@
-package ua.hillel.petrenko.lessons.lesson15.exam;
+package ua.hillel.petrenko.lessons.lesson15;
 
 public class CarTypeClass {
 
