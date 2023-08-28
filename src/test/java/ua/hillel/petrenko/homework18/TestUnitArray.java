@@ -1,4 +1,4 @@
-package ua.hillel.petrenko.homework16;
+package ua.hillel.petrenko.homework18;
 
 import org.junit.jupiter.api.*;
 import ua.hillel.petrenko.homeworks.homework18.UnitArray;
