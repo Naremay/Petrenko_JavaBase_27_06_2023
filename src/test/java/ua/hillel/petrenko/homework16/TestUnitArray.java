@@ -10,6 +10,7 @@ public class TestUnitArray {
 
     @BeforeAll
     static void beforeAll() {
+        System.out.println("beforeAll");
         array = new int[] {2, 4, 6, 2, -4};
 
         matrix = new int[][] {
@@ -81,6 +82,7 @@ public class TestUnitArray {
     static void afterAll() {
         System.out.println("afterAll");
         array = null;
+        matrix = null;
     }
 
 }
